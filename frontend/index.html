@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Inventory Management</title>
+
+ <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+ <div class="container">
+
+  <h1>Inventory Management System</h1>
+
+  <!-- MESSAGE BOX -->
+
+  <div id="messageBox"></div>
+
+
+
+  <!-- FORM -->
+
+  <div class="form-container">
+
+   <h2>Add Item</h2>
+
+   <form id="itemForm">
+
+    <div class="form-group">
+
+     <label>Item Name</label>
+
+     <input type="text" id="name" placeholder="Enter item name" required>
+
+    </div>
+
+
+
+    <div class="form-group">
+
+     <label>Item Type</label>
+      <select id="itemType" required>
+
+       <option value="">Select Type</option>
+
+      </select>
+
+    </div>
+
+
+
+    <div class="form-group">
+
+     <label>Purchase Date</label>
+
+     <input type="date" id="purchaseDate" required>
+
+    </div>
+
+
+
+    <div class="checkbox-group">
+
+     <input type="checkbox" id="stockAvailable">
+
+     <label for="stockAvailable">
+      In Stock
+     </label>
+
+    </div>
+
+
+
+    <button type="submit" class="submit-btn">
+
+     Add Item
+
+    </button>
+
+   </form>
+
+  </div>
+
+
+
+
+
+  <!-- TABLE -->
+
+  <div class="table-container">
+
+   <h2>Items List</h2>
+
+   <div class="table-responsive">
+
+    <table>
+
+     <thead>
+
+      <tr>
+
+       <th>ID</th>
+       <th>Name</th>
+       <th>Type</th>
+       <th>Purchase Date</th>
+       <th>Stock</th>
+       <th>Actions</th>
+
+      </tr>
+
+     </thead>
+
+     <tbody id="tableBody"></tbody>
+
+    </table>
+
+   </div>
+
+  </div>
+
+ </div>
+
+ <script src="script.js"></script>
+
+</body>
+
+</html>
